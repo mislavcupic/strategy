@@ -29,12 +29,13 @@ class SortByGradePointDescending(SortStrategy):
     def sort(self, students):
         return sorted(students, key=lambda s: s.grade_point, reverse=True)
     
-"""
+
 #grade point ascending...lagano dodavanje novih sorting strategija...
-class SortByGradePointAscending(SortStrategy):
-    def sort(self, students):
-        return sorted(students, key=lambda s: s.grade_point)
-"""
+
+# class SortByGradePointAscending(SortStrategy):
+#     def sort(self, students):
+#         return sorted(students, key=lambda s: s.grade_point)
+
 
 # Infoeduka class
 class InfoEduka:
@@ -54,9 +55,9 @@ class InfoEduka:
 if __name__ == "__main__":
     list_of_students = [
         Student("Boro", "Mrazić", 3.8),
-        Student("Ina", "Plinković", 3.9),
+        Student("Ina", "Okić", 3.9),
         Student("Mili", "Mekin", 4.5),
-        Student("Mikica", "Bjelavić", 4.0),
+        Student("Kikica", "Lajević", 4.0),
     ]
 
     info_eduka = InfoEduka(list_of_students)
@@ -72,3 +73,8 @@ if __name__ == "__main__":
     print("\nGrade point - descending:")
     info_eduka.set_sort_strategy(SortByGradePointDescending())
     print(info_eduka.sort_students())
+
+#dodavanje još sorting strategija
+    # print("\nGrade point - ascending:")
+    # info_eduka.set_sort_strategy(SortByGradePointAscending())
+    # print(info_eduka.sort_students())
