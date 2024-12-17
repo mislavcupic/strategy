@@ -28,6 +28,13 @@ class SortByLastNameDescending(SortStrategy):
 class SortByGradePointDescending(SortStrategy):
     def sort(self, students):
         return sorted(students, key=lambda s: s.grade_point, reverse=True)
+    
+"""
+#grade point ascending...lagano dodavanje novih sorting strategija...
+class SortByGradePointAscending(SortStrategy):
+    def sort(self, students):
+        return sorted(students, key=lambda s: s.grade_point)
+"""
 
 # Infoeduka class
 class InfoEduka:
