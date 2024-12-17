@@ -1,0 +1,37 @@
+@startuml
+class Student {
+    __repr__()
+        name
+    last_name
+    grade_point
+    __init__()
+}
+class SortStrategy {
+    sort()
+        __init__()
+}
+class SortByLastNameAscending {
+    sort()
+        __init__()
+}
+class SortByLastNameDescending {
+    sort()
+        __init__()
+}
+class SortByGradePointDescending {
+    sort()
+        __init__()
+}
+class InfoEduka {
+    set_sort_strategy()
+    sort_students()
+        students
+    sort_strategy
+    sort_strategy
+    __init__()
+}
+ABC <|-- SortStrategy
+SortStrategy <|-- SortByLastNameAscending
+SortStrategy <|-- SortByLastNameDescending
+SortStrategy <|-- SortByGradePointDescending
+@enduml

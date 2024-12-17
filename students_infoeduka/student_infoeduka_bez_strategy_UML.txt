@@ -1,0 +1,14 @@
+@startuml
+class Student {
+    __repr__()
+        name
+    last_name
+    grade_point
+    __init__()
+}
+class InfoEduka {
+    sort_students()
+        students
+    __init__()
+}
+@enduml
